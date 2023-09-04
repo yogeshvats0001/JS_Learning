@@ -17,11 +17,17 @@ b()
 //     console.log('anonymous function')
 // }
 
-// named function
+// named function expression
 var c = function xyz(){
     console.log(xyz)
 }
 c()
-xyz()
+// xyz()
+
+// Parameters vs Arguments :: 
+function d(parameter){
+    console.log(parameter)
+}
+d('argument')
 
 // FIRST ORDER FUNCTION :: function as value/ parameter/ returned
