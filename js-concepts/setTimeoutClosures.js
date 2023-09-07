@@ -1,12 +1,12 @@
 // basic example of setTimeout
-function x(){
-    var i = 100
-    setTimeout(function (){
-        console.log(i)
-    }, 3000)
-    console.log('Hello World!')
-}
-x()
+// function x(){
+//     var i = 100
+//     setTimeout(function (){
+//         console.log(i)
+//     }, 3000)
+//     console.log('Hello World!')
+// }
+// x()
 
 // digital watch with the help of setInterval
 // let timeHeading = document.getElementById('timeHeading')
@@ -65,3 +65,17 @@ x()
 //     }
 // }
 // x()
+
+// TRUST ISSUES WITH SETTIMEOUT()
+console.log('start');
+setTimeout(function cb(){
+    console.log('Callback');
+}, 5000);
+console.log('end');
+
+let startTime = new Date().getTime();
+let endTime = startTime;
+while(endTime - startTime < 10000){
+    endTime = new Date().getTime();
+}
+console.log('while ends');
